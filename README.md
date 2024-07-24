@@ -1,2 +1,2 @@
 # genpass
-Generate Password
+Generate Password in CLI
