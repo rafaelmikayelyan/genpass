@@ -3,6 +3,7 @@ package main
 import (
 	"crypto/rand"
 	"fmt"
+	"golang.design/x/clipboard"
 	"math/big"
 	"os"
 	"strconv"
@@ -55,6 +56,12 @@ func generatePassword(pswLength int, charSet string) {
 		password += charSet[randomNum:randomNum + 1]
 	}
 	fmt.Println(password)
+
+	err := clipboard.Init()
+	if err != nil {
+	      panic(err)
+	}
+	clipboard.Write(clipboard.FmtText, []byte(password))
 }
 
 func getRandInt(max int) int {
