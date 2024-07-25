@@ -1,6 +1,6 @@
 # genpass
 
-Quick and simple password generation in CLI with clipboard support.
+Quick and simple CLI tool for password generation with clipboard support.
 
 By default, genpass produces a 16 character long password consisting of uppercase and lowercase letters, numbers and symbols, and automatically adds it to your clipboard.
 
