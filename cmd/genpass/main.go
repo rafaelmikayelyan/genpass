@@ -12,8 +12,6 @@ import (
 const lowercase = "abcdefghijklmnopqrstuvwxyz"
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789"
-const alphanumericReadibility = "ABCDEFGHIJKLMNPQRSTUVWXYZ0123456789" 
-const alphanumericReatibilityFull = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ0123456789" 
 const symbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 const reduced = "!@#$%^&*"
 const defaultPswLength = 16
