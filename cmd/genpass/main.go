@@ -18,8 +18,8 @@ const reduced = "!@#$%^&*"
 const defaultPswLength = 16
 const defaultCharSet = lowercase + uppercase + numbers + symbols
 const version = "1.0"
-const helpMSG = "\nusage: genpass [-lnrsu] [int]\n\noptional flags:\n-l : use lowercase\n-u : use uppercase\n-n : use numbers\n-s : use symbols\n-r : use redused set of symbols : !@#$%^&*\n"
-const errorMSG = "\nError\n" + helpMSG
+const helpMSG = "\nusage: genpass [-lnrsu] [int]\n\noptional flags:\n-l : use lowercase\n-u : use uppercase\n-n : use numbers\n-s : use symbols\n-r : use redused set of symbols : !@#$%^&*\n\nint : length of the password\n"
+const errorMSG = helpMSG
 
 func main() {
 	charSet := defaultCharSet
@@ -66,6 +66,11 @@ func getRandInt(max int) int {
 }
 
 func evaluateFlags(flags string) string {
+	if len(flags) < 2 || flags[0:1] != "-" {
+		fmt.Println(errorMSG)
+		os.Exit(0)
+	}
+
 	charSet := ""
 
 	flagSet := map[string]string {
@@ -76,10 +81,15 @@ func evaluateFlags(flags string) string {
 		"r": reduced,
 	}
 
-	if len(flags) < 2 || flags[0:1] != "-" {
-		fmt.Println(errorMSG)
+	if flags == "-h" || flags == "--help" {
+		fmt.Println(helpMSG)
 		os.Exit(0)
 	}
+	if flags == "-v" || flags == "--version" {
+		fmt.Println(version)
+		os.Exit(0)
+	}
+
 	for i := 1; i < len(flags); i++ {
 		flag, exists := flagSet[flags[i:i+1]]
 		if !exists {
