@@ -91,7 +91,7 @@ func evaluateFlags(flags string) string {
 		os.Exit(0)
 	}
 	if flags == "-v" || flags == "--version" {
-		fmt.Println(version)
+		fmt.Println("genpass version", version)
 		os.Exit(0)
 	}
 
