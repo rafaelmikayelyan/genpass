@@ -12,12 +12,13 @@ import (
 const lowercase = "abcdefghijklmnopqrstuvwxyz"
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789"
+const alphanumericForReadability = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ0123456789" 
 const symbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 const reduced = "!@#$%^&*"
 const defaultPswLength = 16
 const defaultCharSet = lowercase + uppercase + numbers + symbols
-const version = "1.0"
-const helpMSG = "\nusage: genpass [-lnrsu] [int]\n\noptional flags:\n-l : use lowercase\n-u : use uppercase\n-n : use numbers\n-s : use symbols\n-r : use redused set of symbols : !@#$%^&*\n\nint : length of the password\n"
+const version = "1.0.240726.2"
+const helpMSG = "\nusage: genpass [-lnrRsu] [int]\n\noptional flags:\n-l : use lowercase\n-u : use uppercase\n-n : use numbers\n-s : use symbols\n-r : use redused set of symbols : !@#$%^&*\n-R : use alphanumeric set, excluding lowercase L (l), uppercase I (I) and uppercase O (O)\n\nint : length of the password\n"
 const errorMSG = helpMSG
 
 func main() {
@@ -41,7 +42,6 @@ func main() {
 				charSet = evaluateFlags(v)
 			}
 		}
-
 	}
 
 	generatePassword(pswLength, charSet)
@@ -84,6 +84,7 @@ func evaluateFlags(flags string) string {
 		"n": numbers,
 		"s": symbols,
 		"r": reduced,
+		"R": alphanumericForReadability,
 	}
 
 	if flags == "-h" || flags == "--help" {
