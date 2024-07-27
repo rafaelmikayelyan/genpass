@@ -14,7 +14,7 @@ genpass [-lnrsu] [int]
 -u : use uppercase\
 -n : use numbers\
 -s : use symbols\
--r : use redused set of symbols : !@#$%^&*\
+-r : use redused set of symbols `!@#$%^&*\` which correspond to `SHIFT`+`12345678`.
 
 int : length of the password
 
