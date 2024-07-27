@@ -19,7 +19,11 @@ genpass [-lnrRsu] [int]
 
 int : length of the password
 
-For example:
+Additionally, you can use:\
+-v, --version&nbsp;: get version\
+-h, --help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: get description of available functionality
+
+### Examples
 ```
 $ genpass
 => 7RqFM-X"55H\8hrE
