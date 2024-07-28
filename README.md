@@ -41,6 +41,6 @@ $ genpass 5
 => P+N=n
 ```
 ```
-$ genpass 20 -Rnr
+$ genpass 20 -Rr
 => pLpC75q!%SVua496S05W
 ```
