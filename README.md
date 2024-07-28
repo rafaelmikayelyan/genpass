@@ -15,7 +15,7 @@ genpass [-lnrRsu] [int]
 -R : use alphanumeric set, excluding lowercase L (l), uppercase i (I) and uppercase o (O) to increase readability.\
 -n : use numbers\
 -s : use symbols\
--r : use redused set of symbols `!@#$%^&*\` which correspond to <kbd>SHIFT</kbd> + <kbd>1</kbd>...<kbd>8</kbd>
+-r : use redused set of symbols `!@#$%^&*` which correspond to <kbd>SHIFT</kbd> + <kbd>1</kbd>...<kbd>8</kbd>
 
 int : length of the password
 
