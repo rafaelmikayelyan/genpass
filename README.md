@@ -6,6 +6,10 @@ By default, genpass produces a 16 character long password consisting of uppercas
 
 It can be customized using several optional arguments.
 
+## Requirements
+
+You need [Go](https://go.dev/doc/install) to compile (and install) the app.
+
 ## Usage
 
 genpass [-lnrRsu] [int]
