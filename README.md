@@ -12,8 +12,9 @@ You need [Go](https://go.dev/doc/install) to compile (and install) the app.
 
 ## Usage
 
-genpass [-lnrRsu] [int]
+genpass [FLAGS] <COUNT>
 
+#### Flags (optional)
 -l : use lowercase\
 -u : use uppercase\
 -R : use alphanumeric set, excluding lowercase L (l), uppercase i (I) and uppercase o (O) to increase readability.\
@@ -21,9 +22,10 @@ genpass [-lnrRsu] [int]
 -s : use symbols\
 -r : use redused set of symbols `!@#$%^&*` which correspond to <kbd>SHIFT</kbd> + <kbd>1</kbd>...<kbd>8</kbd>
 
-int : length of the password
+#### Arguments (optional)
+0... : length of the password (default is 16)
 
-Additionally, you can use:\
+#### Additionally, you can use the following standalone flags:
 -v, --version&nbsp;: get version\
 -h, --help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: get description of available functionality
 
