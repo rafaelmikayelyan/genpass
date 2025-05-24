@@ -20,14 +20,12 @@ genpass [flags] &lt;count&gt;
 -R : use alphanumeric set, excluding lowercase L (l), uppercase i (I) and uppercase o (O) to increase readability.\
 -n : use numbers\
 -s : use symbols\
--r : use redused set of symbols `!@#$%^&*` which correspond to <kbd>SHIFT</kbd> + <kbd>1</kbd>...<kbd>8</kbd>
+-r : use redused set of symbols `!@#$%^&*` which correspond to <kbd>SHIFT</kbd> + <kbd>1</kbd>...<kbd>8</kbd>\
+-v, --version&nbsp;: get version (must be used alone)\
+-h, --help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: get description of available functionality (must be used alone)
 
 #### Count (optional)
 0... : length of the password (default is 16)
-
-#### Additionally, you can use the following standalone flags:
--v, --version&nbsp;: get version\
--h, --help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: get description of available functionality
 
 ### Examples
 ```
