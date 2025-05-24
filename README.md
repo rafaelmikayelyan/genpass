@@ -14,7 +14,7 @@ You need [Go](https://go.dev/doc/install) to compile (and install) the app.
 
 genpass [flags] &lt;count&gt;
 
-#### Flags (optional) (default is -lnsu)
+#### Flags (optional)
 -l : use lowercase\
 -u : use uppercase\
 -R : use alphanumeric set, excluding lowercase L (l), uppercase i (I) and uppercase o (O) to increase readability.\
@@ -25,7 +25,11 @@ genpass [flags] &lt;count&gt;
 -h, --help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: get description of available functionality (must be used alone)
 
 #### Count (optional)
-0... : length of the password (default is 16)
+0... : length of the password
+
+#### Defaults
+
+`genpass` without arguments is equivalent to 'genpass -lnsu 16', which means 16 character long password made out of upper and lowercase letters, numbers, and symbols
 
 ### Examples
 ```
