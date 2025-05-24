@@ -29,7 +29,7 @@ genpass [flags] &lt;count&gt;
 
 #### Defaults
 
-`genpass` without arguments is equivalent to 'genpass -lnsu 16', which means 16 character long password made out of upper and lowercase letters, numbers, and symbols
+Running `genpass` without any arguments is equivalent to `genpass -lnsu 16`, generating a 16-character password that includes lowercase and uppercase letters, numbers, and symbols.
 
 ### Examples
 ```
