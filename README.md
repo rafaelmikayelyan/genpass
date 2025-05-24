@@ -14,7 +14,7 @@ You need [Go](https://go.dev/doc/install) to compile (and install) the app.
 
 genpass [flags] &lt;count&gt;
 
-#### Flags (optional)
+#### Flags (optional) (default is -lnsu)
 -l : use lowercase\
 -u : use uppercase\
 -R : use alphanumeric set, excluding lowercase L (l), uppercase i (I) and uppercase o (O) to increase readability.\
