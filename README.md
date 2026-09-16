@@ -19,7 +19,7 @@ Generating a secure password should be as simple as a short command.
 
 ### Generate Password
 
-Run `genpass` without any arguments to generate a 16-character password containing lowercase and uppercase letters, numbers, and symbols:
+Run `genpass` without any arguments to generate a 16-character password containing lowercase and uppercase letters, numbers, and symbols, which is automatically copied to your clipboard:
 ```
 $ genpass
 => 7RqFM-X"55H\8hrE
