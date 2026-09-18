@@ -33,7 +33,7 @@ Run `genpass --help` to see all available options.
 
 ## Usage
 
-`genpass [flags] &lt;count&gt;`
+`genpass [flags] <count>`
 
 #### Flags (optional)
 -l : use lowercase\
